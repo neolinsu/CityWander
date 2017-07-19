@@ -6,7 +6,7 @@ root_path="/Users/mac/Desktop/CityWander/"
 spider_path=root_path+"Streetview_Spider/"
 picture_path=root_path+"Streetview_Pictures/"
 
-shapes_temp = shapefile.Reader(root_path+"City_Shapefile/"+city_name+"_Points.shp")
+shapes_temp = shapefile.Reader(root_path+"City_Shapefile/"+city_name+"/"+city_name+"_Points.shp")
 shapes = shapes_temp.shapes() #shp中的所有点存在这里，用point方法访问
 j = 0
 

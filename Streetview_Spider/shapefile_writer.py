@@ -41,7 +41,7 @@ for i in dic:
 
 
 
-w.save(root_path+"City_Shapefile/"+city_name+"_Catched_Points")
+w.save(root_path+"City_Shapefile/"+city_name+"/"+city_name+"_Catched_Points")
 #point_shp.close()
 
 
