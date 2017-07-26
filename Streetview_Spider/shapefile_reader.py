@@ -13,7 +13,7 @@ j = 0
 file=open(spider_path+"Cache/"+city_name+"_Points.txt","w")
 
 
-stop_cnt=50
+stop_cnt=10 #设置此次一共爬取多少点
 print(city_name+" Total Points:%d"%len(shapes))
 print("This time points number:",stop_cnt)
 
