@@ -4,7 +4,7 @@ from random import *
 import time;
 
 #基本路径设置
-city_name="Guangzhou"
+city_name="Beijing"
 root_path="/Users/mac/Desktop/CityWander/"
 spider_path=root_path+"Streetview_Spider/"
 picture_path=root_path+"Streetview_Pictures/"
