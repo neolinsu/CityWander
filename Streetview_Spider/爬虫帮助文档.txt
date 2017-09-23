@@ -1,6 +1,0 @@
-1、QGIS打开.shp文件，用Research工具随机撒点，腾讯街景点覆盖率大概30%，例如广州随机30000点可以得到10000个左右的街景点。
-2、然后生成point的shp文件，用shapefile_reader.py打开，生成guangzhou_point.txt，然后运行Main.py
-3、Main.py将生成三个文件，分别是:
-(1)img_name_file.txt:存储内容为所有街景图片的文件名.
-(2)img_info_file.txt存储内容为文件名，pano，经纬度和地址描述。catchlog_file.txt可以记录上次爬取到的图片，继续爬取。
-4、修改版的爬虫程序可以在任意时刻结束运行，之后可以继续上一次的爬取。
