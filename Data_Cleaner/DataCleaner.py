@@ -91,7 +91,7 @@ class DataCleaner:
 
 
 		for i in error:
-			for j in a:
+			for j in filtered_name:
 				tmp=j.split("_")
 				c1=str(tmp[0])
 				if(i==c1):

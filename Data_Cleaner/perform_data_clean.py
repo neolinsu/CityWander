@@ -1,6 +1,6 @@
 from DataCleaner import *
 #dir format:/Users/mac/Desktop/CityWander/
-cleaner=DataCleaner("Beijing","/Users/mac/Desktop/CityWander/")
+cleaner=DataCleaner("Shanghai","/Users/mac/Desktop/CityWander/")
 
 cleaner.get_file_name()
 cleaner.error_point_name()
