@@ -1,0 +1,32 @@
+街景项目双向筛选数据清洗流程:
+只需要执行：perform_data_clean.py
+perform_data_clean.py的思路为：
+
+顺次执行：
+
+from DataCleaner import *
+#dir format:/Users/mac/Desktop/CityWander/
+cleaner=DataCleaner("Beijing","/Users/mac/Desktop/CityWander/")
+
+cleaner.get_file_name()
+cleaner.error_point_name()
+cleaner.deleter_name()
+cleaner.get_info()
+cleaner.error_point_info()
+cleaner.deleter_info()
+cleaner.error_info_to_name()
+cleaner.deleter_info_to_name()
+
+
+
+old version:
+街景项目双向筛选数据清洗流程:
+1、GetIndex.py获取所有文件名列表，同时生成cityname_img_name_file_filtered.txt文件
+2、ErrorPoint.py利用cityname_img_name_file_filtered.txt，给出不符合条件的文件名列表cityname_img_err_file.txt
+3、Deleter.py利用cityname_img_err_file.txt给出列表，删除这些文件。
+4、GetInfo.py利用cityname_img_name_file_filtered.txt，筛选出cityname_img_info_file.txt中的对应信息，生成cityname_img_info_file_filtered.txt。
+5、ErrorPointUseInfo.py利用cityname_img_info_file_filtered.txt，生成不符合信息的文件列表：cityname_img_info_err_file.txt
+6、DeleterUseInfo.py利用cityname_img_info_err_file.txt，删除这部分文件。
+7、ErrorNames.py利用cityname_img_info_file_filtered.txt，找出多余的文件，生成cityname_img_error_info_to_name_file.txt。
+8、DeleterInfoToName.py利用cityname_img_error_info_to_name_file.txt，删除多余文件。
+9、数据双向筛选清洗完成。	
