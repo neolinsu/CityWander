@@ -97,8 +97,8 @@ if __name__=="__main__":
 
                 path=picture_path+city_name+"/"
 
-                img_info=img.pano+"_"+str(img.heading)+"_"+str(street_point.lat)+"_"+str(street_point.lng)+"_"+address +"_" +description+".jpg"
-                img_name=img.pano+"_"+str(img.heading)+"_"+str(street_point.lat)+"_"+str(street_point.lng)+".jpg"
+                img_info=img.pano+"_"+str(img.heading)+"_"+str(street_point.lat)+"_"+str(street_point.lng)+"_"+address +"_" +description
+                img_name=img.pano+"_"+str(img.heading)+".jpg"
 
                 img_info_file.write(img_info+"\n")
                 img_name_file.write(img_name+"\n")
